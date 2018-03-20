@@ -11,8 +11,8 @@ An HTTP proxy server implemented via python socket programming with caching
 ## Description
 - `proxy.py` is the main proxy file
 - Proxy runs on some specific ports, some ports are reserved for clients and some for servers
-- `end_systems` folder contains the server and the client codes
-	- Client keeps asking any file [1-10].data/txt from server by GET or POST method
+- `.` folder contains the server and the client codes
+	- Client keeps asking any file [1-4].data/txt from server by GET or POST method
 	- Server listens to specified port and serves any file as asked
 - Proxy works as middleman between the server and client and it does caching, authentication, etc
 - Only GET requests are handled
@@ -24,11 +24,13 @@ An HTTP proxy server implemented via python socket programming with caching
 ## How to run
 
 #### Server
-- run server in *end_systems/server/* directory
+- run server in *./server/* directory
 
 - `python server.py` to run server on port 20000
 
 #### Proxy
+- run server in *./proxy/* directory
+
 - `python proxy.py` to run proxy server on port 12345
 
 
